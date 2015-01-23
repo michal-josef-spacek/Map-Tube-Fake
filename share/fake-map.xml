@@ -1,0 +1,15 @@
+<tube name="Fake map">
+  <stations>
+    <!-- Junctions -->
+    <station id="STATION2" name="Station #2" line="Line #1,Line #2" link="1-01,STATION3,2-01"/>
+    <station id="STATION3" name="Station #3" line="Line #1,Line #2" link="STATION2,1-04,2-04"/>
+
+    <!-- Line #1 -->
+    <station id="1-01" name="Station #11" line="Line #1" link="STATION2"/>
+    <station id="1-04" name="Station #14" line="Line #1" link="STATION3"/>
+
+    <!-- Line #2 -->
+    <station id="2-01" name="Station #21" line="Line #2" link="STATION2"/>
+    <station id="2-04" name="Station #24" line="Line #2" link="STATION3"/>
+  </stations>
+</tube>

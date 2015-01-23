@@ -1,0 +1,21 @@
+0.03
+ - Add Map::Tube::Budapest and Map::Tube::Nanjing to SEE ALSO section in doc.
+ - Add Map::Tube::Graph to SEE ALSO section in doc.
+ - Add Map::Tube::Plugin::Graph to SEE ALSO section in doc.
+ - Add Task::Map::Tube to SEE ALSO section in doc.
+ - Update copyright years to 2015.
+
+0.02 2014-12-25T18:26:55+01:00
+ - Add EXAMPLE3 section to doc.
+ - Add Map::Tube::GraphViz, Map::Tube::Text::Table, Map::Tube::Bucharest,
+   Map::Tube::Dnipropetrovsk, Map::Tube::Novosibirsk, Map::Tube::Prague,
+   Map::Tube::SaintPetersburg, Map::Tube::Tbilisi, Map::Tube::Vienna and
+   Map::Tube::Yekaterinburg to SEE ALSO section in doc.
+ - Add get_lines() method to doc.
+ - Add get_stations() method to doc.
+ - Update README.
+ - Remove executable bit from kazan-map.xml file.
+ - Remove obsolete code from EXAMPLE2 section in doc.
+
+0.01 2014-12-11T07:59:22+01:00
+ - First version
