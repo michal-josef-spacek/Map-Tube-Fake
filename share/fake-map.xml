@@ -4,6 +4,8 @@
     <line id="1" name="Line #1" color="green"/>
     <line id="2" name="Line #2" color="red"/>
     <line id="3" name="Line #3" color="blue"/>
+    <line id="4" name="GPS line" color="magenta"/>
+  </lines>
   <stations>
     <!-- Line #1 -->
     <station id="1-01" name="Station #1-1" line="Line #1" link="1-02" other_link="Tunnel:2-01"/>
@@ -19,5 +21,11 @@
     <!-- Line #3 -->
     <station id="3-01" name="Station #3-1" line="Line #3" link="3-02"/>
     <station id="3-02" name="Station #3-2" line="Line #3" link="3-01" other_link="Street:2-03"/>
+
+    <!-- Line #4 -->
+    <station id="4-01" name="Station #4-1" line="Line #4" gps="-21.251771, -159.813932" link="4-02"/>
+    <station id="4-02" name="Station #4-2" line="Line #4" gps="-21.211928, -159.815305" link="4-01,4-03"/>
+    <station id="4-03" name="Station #4-3" line="Line #4" gps="-21.218329, -159.744752" link="4-02,4-04"/>
+    <station id="4-04" name="Station #4-4" line="Line #4" gps="-21.262969, -159.748357" link="4-03"/>
   </stations>
 </tube>
