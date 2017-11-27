@@ -8,7 +8,7 @@ use inc::Module::Install;
 
 # Definition.
 abstract 'Interface to the Fake Metro Map.';
-author 'Michal Spacek <skim@cpan.org>';
+author 'Michal Josef Spacek <skim@cpan.org>';
 install_share 'share';
 license 'bsd';
 license 'artistic_2';

@@ -215,13 +215,13 @@ L<https://github.com/tupinek/Map-Tube-Fake>
 
 =head1 AUTHOR
 
-Michal Špaček L<mailto:skim@cpan.org>
+Michal Josef Špaček L<mailto:skim@cpan.org>
 
 L<http://skim.cz>
 
 =head1 LICENSE AND COPYRIGHT
 
- © 2015-2017 Michal Špaček
+ © 2015-2017 Michal Josef Špaček
  Artistic License
  BSD 2-Clause License
 
