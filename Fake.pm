@@ -195,7 +195,7 @@ Returns string with XML.
 =begin html
 
 <a href="https://raw.githubusercontent.com/tupinek/Map-Tube-Fake/master/images/Fake.png">
-  <img src="https://raw.githubusercontent.com/tupinek/Map-Tube-Fake/master/images/Fake.png" alt="Казанский метрополитен" width="300px" height="300px" />
+  <img src="https://raw.githubusercontent.com/tupinek/Map-Tube-Fake/master/images/Fake.png" alt="Fake metro" width="300px" height="300px" />
 </a>
 
 =end html
