@@ -27,6 +27,7 @@ no_index:
     - inc
     - share
     - t
+    - xt
 requires:
   File::Share: 0
   Map::Tube: '2.41'

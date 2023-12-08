@@ -23,7 +23,7 @@ MANIFEST			This list of files
 META.yml
 README
 share/fake-map.xml
-t/Map-Tube-Fake/00-use.t
-t/Map-Tube-Fake/01-version.t
-t/Map-Tube-Fake/02-pod_coverage.t
-t/Map-Tube-Fake/03-pod.t
+t/Map-Tube-Fake/01-use.t
+t/Map-Tube-Fake/02-version.t
+xt/Map-Tube-Fake/01-pod_coverage.t
+xt/Map-Tube-Fake/02-pod.t
