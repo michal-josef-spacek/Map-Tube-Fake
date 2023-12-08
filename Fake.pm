@@ -127,6 +127,8 @@ Returns string with XML.
 
 =head1 EXAMPLE1
 
+=for comment filename=print_fake_route.pl
+
  use strict;
  use warnings;
 
@@ -137,15 +139,17 @@ Returns string with XML.
  my $obj = Map::Tube::Fake->new;
 
  # Get route.
- my $route = $obj->get_shortest_route(decode_utf8('Яшьлек'), decode_utf8('Горки'));
+ my $route = $obj->get_shortest_route('Station #2-3', 'Station #3-2');
 
  # Print out type.
  print "Route: ".encode_utf8($route)."\n";
 
  # Output:
- # Route: Яшьлек (Центральная линия), Козья слобода (Центральная линия), Кремлёвская (Центральная линия), Площадь Габдуллы Тукая (Центральная линия), Суконная слобода (Центральная линия), Аметьево (Центральная линия), Горки (Центральная линия)
+ # Route: Station #2-3 (Line #2, Street), Station #3-2 (Line #3, Street)
 
 =head1 EXAMPLE2
+
+=for comment filename=print_fake_def_xml_file.pl
 
  use strict;
  use warnings;
@@ -165,6 +169,8 @@ Returns string with XML.
  # XML file: .*/fake-map.xml
 
 =head1 EXAMPLE3
+
+=for comment filename=print_fake_image.pl
 
  use strict;
  use warnings;
@@ -199,6 +205,68 @@ Returns string with XML.
 </a>
 
 =end html
+
+=head1 EXAMPLE4
+
+=for comment filename=print_fake_lines.pl
+
+ use strict;
+ use warnings;
+
+ use Encode qw(encode_utf8);
+ use Map::Tube::Fake;
+
+ # Object.
+ my $obj = Map::Tube::Fake->new;
+
+ # Get lines.
+ my $lines_ar = $obj->get_lines;
+
+ # Print out.
+ map { print encode_utf8($_->name)."\n"; } sort @{$lines_ar};
+
+ # Output:
+ # GPS line
+ # Line #1
+ # Line #2
+ # Line #3
+
+=head1 EXAMPLE5
+
+=for comment filename=print_fake_line_stations.pl
+
+ use strict;
+ use warnings;
+
+ use Encode qw(encode_utf8);
+ use Map::Tube::Fake;
+
+ # Arguments.
+ if (@ARGV < 1) {
+         print STDERR "Usage: $0 line\n";
+         exit 1;
+ }
+ my $line = $ARGV[0];
+
+ # Object.
+ my $obj = Map::Tube::Fake->new;
+
+ # Get stations for line.
+ my $stations_ar = $obj->get_stations($line);
+
+ # Print out.
+ map { print encode_utf8($_->name)."\n"; } @{$stations_ar};
+
+ # Output:
+ # Usage: __PROG__ line
+
+ # Output with 'foo' argument.
+ # Map::Tube::get_stations(): ERROR: Invalid Line Name [foo]. (status: 105) file __PROG__ on line __LINE__
+
+ # Output with 'Line #1' argument.
+ # Station #1-1
+ # Station #1-2
+ # Station #1-3
 
 =head1 DEPENDENCIES
 
