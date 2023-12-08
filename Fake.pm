@@ -200,8 +200,8 @@ Returns string with XML.
 
 =begin html
 
-<a href="https://raw.githubusercontent.com/tupinek/Map-Tube-Fake/master/images/Fake.png">
-  <img src="https://raw.githubusercontent.com/tupinek/Map-Tube-Fake/master/images/Fake.png" alt="Fake metro" width="300px" height="300px" />
+<a href="https://raw.githubusercontent.com/michal-josef-spacek/Map-Tube-Fake/master/images/Fake.png">
+  <img src="https://raw.githubusercontent.com/michal-josef-spacek/Map-Tube-Fake/master/images/Fake.png" alt="Fake metro" width="300px" height="300px" />
 </a>
 
 =end html
@@ -295,7 +295,7 @@ Install the Map::Tube concrete metro modules.
 
 =head1 REPOSITORY
 
-L<https://github.com/tupinek/Map-Tube-Fake>
+L<https://github.com/michal-josef-spacek/Map-Tube-Fake>
 
 =head1 AUTHOR
 
