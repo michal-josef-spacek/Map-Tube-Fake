@@ -33,6 +33,7 @@ Map::Tube::Fake - Interface to the Fake Metro Map.
 =head1 SYNOPSIS
 
  use Map::Tube::Fake;
+
  my $obj = Map::Tube::Fake->new;
  my $routes_ar = $obj->get_all_routes($from, $to);
  my $lines_ar = $obj->get_lines;
