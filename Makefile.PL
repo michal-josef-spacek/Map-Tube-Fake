@@ -7,6 +7,12 @@ use inc::Module::Install;
 # Definition.
 abstract 'Interface to the Fake Metro Map.';
 author 'Michal Josef Spacek <skim@cpan.org>';
+author_requires 'English' => 0;
+author_requires 'File::Object' => 0.08;
+author_requires 'Test::More' => 0;
+author_requires 'Test::NoWarnings' => 0;
+author_requires 'Test::Pod' => 0;
+author_requires 'Test::Pod::Coverage' => 0;
 install_share 'share';
 license 'bsd';
 license 'artistic_2';
@@ -20,13 +26,9 @@ requires 'perl' => '5.8.0';
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Map-Tube-Fake/issues';
 resources 'homepage' => 'https://github.com/michal-josef-spacek/Map-Tube-Fake';
 resources 'repository' => 'git://github.com/michal-josef-spacek/Map-Tube-Fake';
-test_requires 'Encode' => 0;
-test_requires 'English' => 0;
-test_requires 'File::Object' => 0.08;
+test_requires 'Test::Map::Tube' => 0;
 test_requires 'Test::More' => 0;
 test_requires 'Test::NoWarnings' => 0;
-test_requires 'Test::Pod' => 0;
-test_requires 'Test::Pod::Coverage' => 0;
 tests_recursive;
 version '0.03';
 
